@@ -8,6 +8,7 @@
 ## classDiagram
 ```mermaid
 classDiagram
+    Form1 <|-- Information
     Information <|-- Student
     Information <|-- Book
     Information <|-- BorrowList
