@@ -14,6 +14,7 @@ classDiagram
     Form1 : Return Book()
     Form1 : save()
     Form1 : load()
+    note for Information "On click Borrow Book"
     Information <|-- Student
     Information <|-- Book
     Information <|-- BorrowList
@@ -22,8 +23,9 @@ classDiagram
     Information: Return Book()
     Information: save()
     Information: load()
-    BorrowReturn --|> Form1
-    BorrowReturn <|-- BorrowList
+     note for BookReturn "On click Return Book"
+    BookReturn --|> Form1
+    BookReturn <|-- BorrowList
     class Student{
         +String Name
         +String ID
