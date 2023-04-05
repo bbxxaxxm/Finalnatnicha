@@ -12,20 +12,20 @@ Form1 --|> Information
 <<Interface>> Form1
 Information --|> Form1
 note for Information "Borrow Book"
-classStudent --|> Information
+classStudent --> Information
 classStudent : str Name
 classStudent : str ID
 classStudent : str Major
 classStudent : str Year
 classStudent --|> Form1
-classBook --|> Information
+classBook --> Information
 classBook : str BookName
 classBook : str BookID
 classBook : str BookShel
 classBook : str Borrow
 classBook : str Return
 classBook --|> Form1
-classBorrowList --|> Information
+classBorrowList --> Information
 classBorrowList : str studentname
 classBorrowList : str studentid
 classBorrowList : str major
