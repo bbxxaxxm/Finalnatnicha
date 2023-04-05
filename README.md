@@ -22,6 +22,8 @@ classDiagram
     Information: Return Book()
     Information: save()
     Information: load()
+    BorrowReturn --|> Form1
+    BorrowReturn <|-- Book
     class Student{
         +String Name
         +String ID
