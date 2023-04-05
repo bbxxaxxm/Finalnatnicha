@@ -8,21 +8,38 @@
 ## classDiagram
 ```mermaid
 classDiagram
-Form1 --|> Information
-<<Interface>> Form1
-Information --|> Form1
-Information <-- Student
-note for Information "Borrow Book"
-class Student{
+    Information <|-- Student
+    Information <|-- Book
+    Information <|-- BorrowList
+    Information : DataGridView1()
+    Information : Borrow Book()
+    Information: Return Book()
+    Information: save()
+    Information: load()
+    class Student{
         +String Name
         +String ID
         +String Major
         +String Year
-Form1 : DataGridView1()
-Form1 : Borrow Book()
-Form1 : Return Book()
-form1 : save()
-Form1 : load()
+    }
+    class Book{
+        +String BookName
+        +String BookID
+        +String Bookshelf
+        +String Borrow
+        +String Return
+    }
+    class BorrowList{
+        +string studentname
+        +string studentid
+        +string major
+        +string year
+        +string bookname
+        +string bookid
+        +string bookshelf
+        +string borrowdate
+        +string returndate
+    }
 ```
 
 ## ผู้พัฒนาโปรแกรม
