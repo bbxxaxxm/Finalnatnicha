@@ -9,7 +9,7 @@
 ```mermaid
 classDiagram
 Form1 --|> Information
-<<Interface>> Form1
+
 Information --|> Form1
 note for Information "Borrow Book"
 classStudent --> Information
@@ -20,6 +20,9 @@ classStudent : str Year
 classStudent --|> Form1
 Form1 : DataGridView1()
 Form1 : Borrow Book()
+Form1 : Return Book()
+form1 : save()
+Form1 : load()
 ```
 
 ## ผู้พัฒนาโปรแกรม
