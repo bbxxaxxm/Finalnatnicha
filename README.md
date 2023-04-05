@@ -9,6 +9,11 @@
 ```mermaid
 classDiagram
     Form1 <|-- Information
+    Form1 : DataGridView1()
+    Form1 : Borrow Book()
+    Form1 : Return Book()
+    Form1 : save()
+    Form1 : load()
     Information <|-- Student
     Information <|-- Book
     Information <|-- BorrowList
