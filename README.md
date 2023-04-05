@@ -19,7 +19,7 @@ classStudent : str Major
 classStudent : str Year
 classStudent --|> Form1
 Form1 : DataGridView1()
-Form1 : +Borrow Book()
+Form1 : Borrow Book()
 ```
 
 ## ผู้พัฒนาโปรแกรม
