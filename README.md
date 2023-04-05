@@ -11,31 +11,13 @@ classDiagram
 Form1 --|> Information
 <<Interface>> Form1
 Information --|> Form1
+Information <-- Student
 note for Information "Borrow Book"
-classStudent --> classBorrowList
-classStudent : str Name
-classStudent : str ID
-classStudent : str Major
-classStudent : str Year
-classStudent --|> Form1
-classBook --> classBorrowList
-classBook : str BookName
-classBook : str BookID
-classBook : str BookShel
-classBook : str Borrow
-classBook : str Return
-classBook --|> Form1
-classBorrowList --> Information
-classBorrowList : str studentname
-classBorrowList : str studentid
-classBorrowList : str major
-classBorrowList : str year
-classBorrowList : str bookname
-classBorrowList : str bookid
-classBorrowList : str bookshelf
-classBorrowList : str borrowdate
-classBorrowList : str returndate
-classBorrowList --> Form1
+class Student{
+        +String Name
+        +String ID
+        +String Major
+        +String Year
 Form1 : DataGridView1()
 Form1 : Borrow Book()
 Form1 : Return Book()
