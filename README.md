@@ -15,8 +15,7 @@ classDiagram
     Form1 : save()
     Form1 : load()
     note for Information "On click Borrow Book"
-    Information <|-- Student
-    Information <|-- Book
+
     Information <|-- BorrowList
     Information : DataGridView1()
     Information : Borrow Book()
