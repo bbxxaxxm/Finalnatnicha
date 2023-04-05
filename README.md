@@ -8,7 +8,7 @@
 ## classDiagram
 ```mermaid
 ---
-title: ยืม-คืนหนังสือ
+title: Borrow - Return Book
 ---
 classDiagram
 Form1 --|> Information
