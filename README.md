@@ -8,31 +8,42 @@
 ## classDiagram
 ```mermaid
 ---
-title: Animal example
+title: ยืม-คืนหนังสือ
 ---
 classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
+Form1 --|> Information
+<<Interface>> Form1
+Information --|> Form1
+note for Information "Borrow Book"
+classStudent --> Information
+classStudent : str Name
+classStudent : str ID
+classStudent : str Major
+classStudent : str Year
+classStudent --> Form1
+classBook --> Information
+classBook : str BookName
+classBook : str BookID
+classBook : str BookShel
+classBook : str Borrow
+classBook : str Return
+classBook --> Form1
+classBorrowList --> Information
+classBorrowList : str studentname
+classBorrowList : str studentid
+classBorrowList : str major
+classBorrowList : str year
+classBorrowList : str bookname
+classBorrowList : str bookid
+classBorrowList : str bookshelf
+classBorrowList : str borrowdate
+classBorrowList : str returndate
+classBorrowList --> Form1
+Form1 : DataGridView1()
+Form1 : Borrow Book()
+Form1 : Return Book()
+form1 : save()
+Form1 : load()
 ```
 
 ## ผู้พัฒนาโปรแกรม
