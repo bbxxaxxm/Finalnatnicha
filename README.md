@@ -37,10 +37,10 @@ classBorrowList : str borrowdate
 classBorrowList : str returndate
 classBorrowList --|> Form1
 Form1 : DataGridView1()
-Form1 : Borrow Book()
-Form1 : Return Book()
-form1 : save()
-Form1 : load()
+Form1 : +Borrow Book()
+Form1 : +Return Book()
+form1 : +save()
+Form1 : +load()
 ```
 
 ## ผู้พัฒนาโปรแกรม
