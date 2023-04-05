@@ -8,23 +8,23 @@
 ## classDiagram
 ```mermaid
 classDiagram
-Form1 --|> Information
+Form1 --> Information
 <<Interface>> Form1
-Information --|> Form1
+Information --> Form1
 note for Information "Borrow Book"
 classStudent --> Information
 classStudent : str Name
 classStudent : str ID
 classStudent : str Major
 classStudent : str Year
-classStudent --|> Form1
+classStudent --> Form1
 classBook --> Information
 classBook : str BookName
 classBook : str BookID
 classBook : str BookShel
 classBook : str Borrow
 classBook : str Return
-classBook --|> Form1
+classBook --> Form1
 classBorrowList --> Information
 classBorrowList : str studentname
 classBorrowList : str studentid
@@ -35,7 +35,7 @@ classBorrowList : str bookid
 classBorrowList : str bookshelf
 classBorrowList : str borrowdate
 classBorrowList : str returndate
-classBorrowList --|> Form1
+classBorrowList --> Form1
 Form1 : DataGridView1()
 Form1 : +Borrow Book()
 Form1 : +Return Book()
